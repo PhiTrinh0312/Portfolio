@@ -1,0 +1,78 @@
+#My-project{
+    width: 100%;
+    display: flex;
+    height: 8%;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    color: var(--title);
+    margin-top: 0px;
+}
+.project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+ 
+}
+.container h1.active, .container h1:hover{
+    background:linear-gradient(blue,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.description{
+    width: 30%;
+    height: 92%;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 50px;
+  
+   
+}
+
+.description h3.active, .description h3:hover{
+        background:linear-gradient(120deg,red, #3cf,#f06,blue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+}
+/* /////////////////////////////IMG project/////////// */
+.img-project-visual{
+    width: 750%;
+    height: 100%;
+    margin-top: 120px;
+    font-size: 25px;
+    margin-left: 400px;
+    
+}
+.img-project-visual h3.active, .img-project-visual h3:hover{
+    background:linear-gradient(180deg,red, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.project-visual__img{
+    margin-left: -370px;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+}
+.project-visual__img1{
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+}
+.project-visual__img2   {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 250px;
+    height: 400px;
+    margin-left: 100px;
+    margin-bottom: -140px;
+    
+}
+

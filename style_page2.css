@@ -1,0 +1,91 @@
+.skill-header{
+    width: 100%;
+    height: 50px;
+  
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.skill-header h1.active, .skill-header h1:hover{
+    background:linear-gradient(blue,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.skills{
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.skills-left{
+  width: 45%;
+  height: 100%;
+  margin-left: 50px;
+}
+.skills-right{
+    margin-left: 70px;
+    width: 45%;
+    height: 100%;
+}
+.skill-programming{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.skill-programming-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .skill-programming-lv {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+.skill-programming-chart1{
+    width: calc(100% - 20% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}
+.skill-programming-chart2{
+    width: calc(100% - 15% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}
+.skill-programming-chart3{
+    width: calc(100% - 15% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}
+.skill-programming-chart4{
+    width: calc(100% - 20% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}
+.skill-programming-chart5{
+    width: calc(100% - 15% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}
+.skill-programming-chart6{
+    width: calc(100% - 25% );
+    height: 5%;
+    background: var(--color);
+    border-radius: 30px;    
+}

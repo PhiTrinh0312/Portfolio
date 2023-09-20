@@ -1,0 +1,71 @@
+/* Định nghĩa biến cho linear-gradient */
+:root {
+    --color: linear-gradient(45deg, #f06, #3cf);
+    --background:#0c1022;
+    --title: linear-gradient(red,blue);
+  }
+
+
+  /* ////KEYFRAME ANIMATION///// */
+  @keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes slideBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(+100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes Zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  
+  @keyframes circle-loading{
+    to{
+        transform: rotate(360deg);
+    }
+  }
+  
+  
