@@ -173,8 +173,137 @@
           </div>
          </div>
       </div>
+    <h1 id="activity"class="active">Activities</h1>
+      <div class="wrapper">
+        <div class="wrapper-contain">
+          <div class="wrapper-contain_top">
+              <img onclick=changeImg(id) class="wrapper-contain_img "id="0" src="xmas_gift1.jpg" alt="">
+              <img onclick=changeImg(id)  class="wrapper-contain_img " id="1"src="xmax_gift2.jpg" alt="">
+              <img onclick=changeImg(id) class="wrapper-contain_img "id="2" src="xmas_gift3.jpg" alt="">
+              <img onclick=changeImg(id) class="wrapper-contain_img "id="3"  src="xmas_gift4.jpg" alt="">         
+          </div>
+ 
+          <div class="wrapper-contain_bot">
+             <img onclick=changeImg(id) class="wrapper-contain_img"id="4" src="Racing_1.jpg" alt="">
+             <img onclick=changeImg(id) class="wrapper-contain_img"id="5" src="Racing_2.jpg" alt="">
+             <img onclick=changeImg(id) class="wrapper-contain_img"id="6" src="Racing_3.jpg">
+             <img onclick=changeImg(id) class="wrapper-contain_img"id="7" src="racing_4.jpg" alt="">         
+         </div>
+ 
+        </div>
+    </div>
+ 
+    <div class="img-modal hidden">
+         
+         <div class="img-modal_overplay">
+            
+              <i onclick="arrow_left()" class="fa-sharp fa-solid fa-arrow-left"></i> 
+               <div class="container-img">
+                 <img class="IMG main_img" id="main-img" src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_640.jpg" alt="">
+               </div>
+                <i onclick="arrow_right()" class="fa-sharp fa-solid fa-arrow-right"></i>
+                <i onclick="out_modal()" class="fa-solid fa-xmark"></i>
+             
+         </div>
+         
+         
+    </div>
+   
+    <script>
+      
+var modal=document.querySelector('.img-modal');
+var out =document.querySelector(".fa-xmark")
 
-        
+  function out_modal(){
+    modal.classList.toggle("hidden");
+  }
+ function changeImg(id){
+    
+      let img_wrapper=document.getElementById(id).getAttribute("src")
+      let img_modal=document.getElementById("main-img").setAttribute("src",img_wrapper)
+    
+    modal.classList.toggle("hidden")
+ }
+ // function arrow(){
+ //   let img_wrapper=document.getElementsByClassName("wrapper-contain_img")
+ //   let img_modal=document.getElementById("main-img")
+ //   let n=img_wrapper.length
+ //   for(let i=0;i<n;i++)
+ //   if(img_wrapper[i].getAttribute("src")==img_modal.getAttribute("src"))
+ //   {
+
+ //     let next=img_wrapper[i+1].getAttribute("src")
+    
+ //   main.setAttribute("src",next)
+ //   }
+
+ // }
+ 
+function arrow_right() {
+let img_wrapper = document.getElementsByClassName("wrapper-contain_img");
+// console.log(img_wrapper)
+let img_modal = document.getElementById("main-img")
+let n = img_wrapper.length;
+for(let i=0;i<n;++i)
+{
+ // console.log(img_wrapper[i].getAttribute("src"))
+ console.log("i la "+i)
+ if(img_wrapper[i].getAttribute("src")===img_modal.getAttribute("src"))
+ {
+   // console.log("i la "+i)
+   // console.log(img_modal.getAttribute("src"))
+   // console.log(img_wrapper[i].getAttribute("src"))
+   if(i===n-1){
+     let next=img_wrapper[0].getAttribute("src")
+    console.log("next la: "+ next)
+    img_modal.setAttribute("src",next)
+    console.log("modal la "+img_modal.getAttribute("src"))
+    break;
+   }
+   else if(i<n){
+     let next=img_wrapper[i+1].getAttribute("src")
+    console.log("next la: "+ next)
+    img_modal.setAttribute("src",next)
+    console.log("modal la "+img_modal.getAttribute("src"))
+    break;
+   }   
+ }
+}
+}
+function arrow_left() {
+let img_wrapper = document.getElementsByClassName("wrapper-contain_img");
+// console.log(img_wrapper)
+let img_modal = document.getElementById("main-img")
+let n = img_wrapper.length;
+for(let i=0;i<n;++i)
+{
+ // console.log(img_wrapper[i].getAttribute("src"))
+ console.log("i la "+i)
+ if(img_wrapper[i].getAttribute("src")===img_modal.getAttribute("src"))
+ {
+   // console.log("i la "+i)
+   // console.log(img_modal.getAttribute("src"))
+   // console.log(img_wrapper[i].getAttribute("src"))
+
+    if(i>0){
+     let next=img_wrapper[i-1].getAttribute("src")
+    console.log("next la: "+ next)
+    img_modal.setAttribute("src",next)
+    console.log("modal la "+img_modal.getAttribute("src"))
+    break;
+   }  
+
+      else if(i===0){
+     let next=img_wrapper[n-1].getAttribute("src")
+    console.log("next la: "+ next)
+    img_modal.setAttribute("src",next)
+    console.log("modal la "+img_modal.getAttribute("src"))
+    break;
+   } 
+ }
+}
+}
+    </script>
         
         
         
